@@ -5,11 +5,11 @@ from pydantic import BaseModel, Field
 from starlette import status
 from sqlalchemy.orm import Session
 
-from routers.auth import get_current_user
-from routers.helpers import check_user_authentication
+from app.routers.auth import get_current_user
+from app.routers.helpers import check_user_authentication
 
-from models.models import Todos
-from db.database import SessionLocal
+from app.models.models import Todos
+from app.db.database import SessionLocal
 
 router = APIRouter()
 

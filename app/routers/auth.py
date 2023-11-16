@@ -5,9 +5,9 @@ from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
 from pydantic import BaseModel
 from starlette import status
 
-from models.models import Users
+from app.models.models import Users
 from passlib.context import CryptContext
-from db.database import SessionLocal
+from app.db.database import SessionLocal
 from typing import Annotated, Any
 from sqlalchemy.orm import Session
 from jose import jwt, JWTError
@@ -20,8 +20,8 @@ from dotenv import load_dotenv
 load_dotenv()  # take environment variables from .env.
 
 # These are used to create the signature for a JWT
-SECRET_KEY = ''
-ALGORITHM = ''
+SECRET_KEY = os.getenv('SECRET_KEY')
+ALGORITHM = os.getenv('ALGORITHM')
 
 bcrypt_context = CryptContext(schemes=['bcrypt'], deprecated='auto')
 oauth2_bearer = OAuth2PasswordBearer(tokenUrl='auth/token')
