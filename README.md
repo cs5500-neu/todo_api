@@ -42,3 +42,15 @@ ANOTHER HINT: You need to choose an algorithm to use to encode your JWT tokens. 
 Finally, there is a bug in the Authorization component. Find it and fix it so that you can use authorize a user given their role (i.e. user, admin, etc).
 
  
+## Docker
+
+Navigate to the root of this repo.
+
+* Build the image: `docker build -t todo_app_test:v1 .`
+* Run the container: `docker run --name myapp -p 8080:8000 todo_app_test:v1`
+* Stop the container: `docker stop myapp`
+* Remove the container: `docker remove myapp`
+
+
+
+
