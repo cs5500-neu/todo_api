@@ -3,6 +3,7 @@
 ## Prerequisites
 * [Install `sqlite3`](https://www.servermania.com/kb/articles/install-sqlite)
   * Hint: MacOS already has `sqlite3` installed
+* Python <=3.11 
 
 ## Installation
 
