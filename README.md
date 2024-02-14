@@ -29,7 +29,7 @@
 
 There are two bugs in this codebase that should be fixed before you can successfully run this app. If you don't fix it, you will see a 500 Internal Server Error on the GUI.
 
-1. Authentication and Authorization are already implemented for you. But something
+1. Did you try logging in as your new user? Did you notice that it failed? Authentication and Authorization are already implemented for you. But something
 is missing. Perhaps it could be something with your 'environment'? You should look into Python's [`os`](https://docs.python.org/3/library/os.html#os.getenv) library.
 
 HINT1: You need to create your own secret key that no one else should know about. You can create a secret key on your own
